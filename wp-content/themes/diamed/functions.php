@@ -9,4 +9,10 @@ remove_action('admin_print_styles', 'print_emoji_styles');
 
 
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
+
+function enqueue_custom_styles() {
+    wp_enqueue_style('main-styles', get_template_directory_uri() . '/assets/scss/style.css');
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_styles');
+
 ?>
