@@ -1,0 +1,123 @@
+/* Blocks */
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  padding: 30px 72px 30px 72px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  width: 112px;
+  height: 64px;
+  margin-right: 82px;
+}
+
+.main-menu {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 1;
+}
+
+.main-menu .menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 25px;
+}
+
+.main-menu .menu li {
+  margin: 0 10px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+}
+
+.header-button button {
+  width: auto;
+  height: 32px;
+  padding: 8px 16px;
+  border-radius: 3px;
+  background-color: #4598D4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15.6px;
+  text-align: left;
+  margin-right: 340px;
+}
+
+/* Footer */
+footer {
+  background-color: #4598D4;
+  color: #ffffff;
+  padding: 40px 0; /* Increased padding for more space */
+  position: relative;
+}
+
+.footer-pattern img {
+  width: 100%;
+  display: block;
+  margin-bottom: -5px; /* Adjust this value to remove any gap */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  padding: 0 10px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 100px 0 30px;
+}
+
+.footer-logo img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-bottom {
+  font-size: 0.9em;
+  margin-top: 85px;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}/*# sourceMappingURL=style.css.map */
