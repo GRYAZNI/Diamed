@@ -467,6 +467,14 @@ module.exports = function(grunt) {
 				options: {
 					implementation: sass
 				}
+			},
+			diamed: {
+				files: {
+					'src/wp-content/themes/diamed/assets/css/style.css': 'src/wp-content/themes/diamed/assets/scss/style.scss'
+				},
+				options: {
+					implementation: sass
+				}
 			}
 		},
 		cssmin: {
@@ -1220,6 +1228,14 @@ module.exports = function(grunt) {
 					'!tests/qunit/editor/**'
 				],
 				tasks: ['qunit']
+			},
+			diamed: {
+				files: ['src/wp-content/themes/diamed/assets/scss/**/*.scss'],
+				tasks: ['sass:diamed'],
+				options: {
+					spawn: false,
+					atBegin: true
+				}
 			}
 		}
 	});
