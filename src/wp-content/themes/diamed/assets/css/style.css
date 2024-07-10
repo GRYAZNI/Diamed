@@ -76,56 +76,17 @@ header {
   font-family: "Open Sans", sans-serif;
 }
 
-.clinic-section .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.clinic-block {
-  width: Fill 1, 440px px;
-  height: Hug 494px px;
-  padding: 0px 72px 0px 72px;
-  gap: 24px;
-  opacity: 0px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.clinic-block h2 {
-  font-family: El Messiri;
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 50.4px;
-  text-align: center;
-}
-
-.clinic-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  text-align: left;
-}
-
-.clinic-about {
-  gap: 24px;
-  opacity: 0px;
-}
-.clinic-about .clinic-section {
-  padding: 50px 72px;
-  background-color: #fff;
-  color: #333;
-  font-family: "Open Sans", sans-serif;
-}
-.clinic-about .container {
+.container {
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
-.clinic-about .clinic-block {
+
+.clinic-block {
   margin-bottom: 40px;
 }
-.clinic-about .clinic-block h2 {
+
+.clinic-block h2 {
   font-family: "El Messiri", sans-serif;
   font-size: 42px;
   font-weight: 700;
@@ -133,91 +94,30 @@ header {
   text-align: center;
   margin-bottom: 30px;
 }
-.clinic-about .clinic-content {
+
+.clinic-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-.clinic-about .clinic-about {
+
+.clinic-about {
   width: 746px; /* Фиксированная ширина блока слева */
   height: 420px; /* Фиксированная высота блока слева */
   gap: 24px; /* Отступ между блоком слева и картинкой справа */
   opacity: 1; /* Убедитесь, что блок видим */
 }
-.clinic-about .clinic-text {
+
+.clinic-text {
   width: 100%; /* Занимает всю ширину блока слева */
   height: 100%; /* Занимает всю высоту блока слева */
   display: flex;
   flex-direction: column;
   gap: 12px; /* Отступ между элементами в блоке текста */
 }
-.clinic-about .clinic-text p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 25.2px;
-  text-align: left;
-}
-.clinic-about .clinic-text p span {
-  font-weight: 700;
-}
-.clinic-about .clinic-text ul {
-  margin-top: 15px;
-  list-style: disc inside;
-}
-.clinic-about .clinic-buttons {
-  margin-top: auto; /* Размещаем кнопки внизу блока */
-}
-.clinic-about .clinic-buttons button {
-  background-color: #4598D4;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin-right: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 14px;
-}
-.clinic-about .clinic-image {
-  width: 526px; /* Ширина картинки справа */
-  height: 420px; /* Высота картинки справа */
-  border-radius: 0 12px 12px 0; /* Скругление углов только справа */
-}
-.clinic-about .clinic-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0 12px 12px 0; /* Скругление углов только справа */
-}
-.clinic-about .clinic-icons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 40px;
-}
-.clinic-about .clinic-icons .icon {
-  text-align: center;
-  width: 18%;
-}
-.clinic-about .clinic-icons .icon img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
-}
-.clinic-about .clinic-icons .icon p {
-  font-size: 15px;
-  line-height: 1.4;
-}
-
-.clinic-text {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  gap: 12px;
-}
 
 .clinic-text p {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 25.2px;
@@ -225,11 +125,7 @@ header {
 }
 
 .clinic-text p span {
-  font-family: Open Sans;
-  font-size: 18px;
   font-weight: 700;
-  line-height: 25.2px;
-  text-align: left;
 }
 
 .clinic-text ul {
@@ -238,7 +134,7 @@ header {
 }
 
 .clinic-buttons {
-  margin-top: 20px;
+  margin-top: auto; /* Размещаем кнопки внизу блока */
 }
 
 .clinic-buttons button {
@@ -252,18 +148,29 @@ header {
   font-size: 14px;
 }
 
-.clinic-image {
-  width: 35%;
+.button-about button {
+  background-color: #fff;
+  color: #4598D4;
+  width: 169px;
+  height: 40px;
+  padding: 12px 48px;
+  gap: 10px;
+  border-radius: 3px;
+  border: 1px solid #4598D4;
+  opacity: 1;
 }
 
-.clinic-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+.clinic-image {
+  width: 526px;
+  height: 420px;
+  gap: 0px;
+  border-radius: 12px;
+  opacity: 1;
 }
 
 .clinic-icons {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
