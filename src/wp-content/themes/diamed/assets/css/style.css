@@ -68,6 +68,23 @@ header {
   margin-right: 340px;
 }
 
+/* Slider-1 */
+.swiper {
+  width: 1296px;
+  height: 640px;
+  gap: 16px;
+  border-radius: 12px 0 0 0;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* About */
 .clinic-section {
   padding: 50px 0;
@@ -82,35 +99,29 @@ header {
   margin-left: auto;
 }
 
-.clinic-block {
-  margin-bottom: 40px;
-}
-
 .clinic-block h2 {
   font-family: "El Messiri", sans-serif;
   font-size: 42px;
   font-weight: 700;
-  line-height: 50.4px;
+  line-height: 50px;
   text-align: center;
   margin-bottom: 30px;
 }
 
 .clinic-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
 }
 
 .clinic-about {
   width: 746px; /* Фиксированная ширина блока слева */
   height: 420px; /* Фиксированная высота блока слева */
-  gap: 24px; /* Отступ между блоком слева и картинкой справа */
   opacity: 1; /* Убедитесь, что блок видим */
 }
 
 .clinic-text {
   width: 100%; /* Занимает всю ширину блока слева */
-  height: 100%; /* Занимает всю высоту блока слева */
   display: flex;
   flex-direction: column;
   gap: 12px; /* Отступ между элементами в блоке текста */
@@ -128,13 +139,10 @@ header {
   font-weight: 700;
 }
 
-.clinic-text ul {
-  margin-top: 15px;
-  list-style: disc inside;
-}
-
 .clinic-buttons {
-  margin-top: auto; /* Размещаем кнопки внизу блока */
+  display: flex;
+  gap: 12px; /* Расстояние между кнопками */
+  margin-top: 20px; /* Размещаем кнопки внизу блока */
 }
 
 .clinic-buttons button {
@@ -173,18 +181,12 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 100px;
 }
 
 .clinic-icons .icon {
   text-align: center;
   width: 18%;
-}
-
-.clinic-icons .icon img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
 }
 
 .clinic-icons .icon p {
