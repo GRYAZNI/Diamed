@@ -86,13 +86,6 @@ header {
 }
 
 /* About */
-.clinic-section {
-  padding: 50px 0;
-  background-color: #fff;
-  color: #333;
-  font-family: "Open Sans", sans-serif;
-}
-
 .container {
   max-width: 100%;
   margin-right: auto;
@@ -108,6 +101,12 @@ header {
   margin-bottom: 30px;
 }
 
+.clinic-section {
+  padding: 50px 0;
+  background-color: #fff;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+}
 .clinic-content {
   display: flex;
   justify-content: center;
@@ -181,7 +180,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .clinic-icons .icon {
@@ -192,6 +191,70 @@ header {
 .clinic-icons .icon p {
   font-size: 15px;
   line-height: 1.4;
+}
+
+/* services */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 306px;
+  height: 220px;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 24px, 32px, 24px, 32px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #4598D4, #4598D4), linear-gradient(0deg, rgba(1, 138, 190, 0.5), rgba(1, 138, 190, 0.5));
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.card .title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card:hover .overlay {
+  opacity: 0.8;
 }
 
 /* Footer */

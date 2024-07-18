@@ -58,6 +58,28 @@
             </div>
         </div>
     </section>
+
+    <div class="services-block">
+        <h1>Клиника эндокринологии, суставов и позвоночника в Уфе</h1>
+        <div class="grid">
+            <?php
+            $images = [
+                "Лечение грыжи", "Лечение суставов", "Гирудотерапия", "Ботулинотерапия",
+                "МВТ-терапия", "Невролог", "Диабетолог", "Плазмоферез",
+                "Массаж", "УЗ кавитация", "Прессотерапия", "УВТ"
+            ];
+            
+            foreach ($images as $index => $title) {
+                echo '
+                <div class="card">
+                    <div class="overlay"></div>
+                    <img src="' . get_template_directory_uri() . '/assets/img/services-' . ($index + 1) . '.jpg" alt="' . $title . '">
+                    <div class="title">' . $title . '</div>
+                </div>';
+            }
+            ?>
+        </div>
+    </div>
     <div class="swiper">
   <div class="swiper-wrapper">
     <div class="swiper-slide">Slide 1</div>

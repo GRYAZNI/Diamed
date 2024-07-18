@@ -53,5 +53,11 @@
     </div>
 </footer>
 <?php wp_footer(); ?>
+<script>
+const swiper = new Swiper('.swiper', {
+  speed: 400,
+  spaceBetween: 100,
+});
+</script>
 </body>
 </html>
