@@ -1,10 +1,25 @@
-.swiper {
-  width: 1296px;
+.swiper1 {
+  width: 1000px;
   height: 640px;
   gap: 16px;
   border-radius: 12px 0 0 0;
 }
-.swiper-slide {
+.swiper1 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-video {
+  width: 1000px;
+  height: 640px;
+  gap: 16px;
+  border-radius: 12px 0 0 0;
+}
+.swiper-video .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;

@@ -1,0 +1,44 @@
+.therapy-container {
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.therapy-container h2 {
+font-family: El Messiri;
+font-size: 28px;
+font-weight: 700;
+line-height: 33.6px;
+text-align: center;
+
+}
+
+.therapy-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.therapy-item {
+    flex: 1 1 calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.therapy-item img {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 20px;
+}
+
+.therapy-item p {
+font-family: El Messiri;
+font-size: 20px;
+font-weight: 600;
+line-height: 24px;
+text-align: center;
+
+}

@@ -23,22 +23,25 @@
     }
     &-content {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: flex-start;
+        padding: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
 
 .clinic-about {
-    width: 746px; /* Фиксированная ширина блока слева */
-    height: 420px; /* Фиксированная высота блока слева */
-    opacity: 1; /* Убедитесь, что блок видим */
+    width: 65%;
+    height: 420px; 
+    opacity: 1; 
 }
 
 .clinic-text {
-    width: 100%; /* Занимает всю ширину блока слева */
+    width: 100%; 
     display: flex;
     flex-direction: column;
-    gap: 12px; /* Отступ между элементами в блоке текста */
+    gap: 12px; 
 }
 
 .clinic-text p {
@@ -57,8 +60,8 @@
 
 .clinic-buttons {
     display: flex;
-    gap: 12px; /* Расстояние между кнопками */
-    margin-top: 20px; /* Размещаем кнопки внизу блока */
+    gap: 12px; 
+    margin-top: 20px; 
 }
 
 .clinic-buttons button {
@@ -97,7 +100,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 80px;
 }
 
 .clinic-icons .icon {

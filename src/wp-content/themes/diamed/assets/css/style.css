@@ -14,7 +14,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 95%;
 }
 
 .logo {
@@ -65,18 +65,33 @@ header {
   font-weight: 600;
   line-height: 15.6px;
   text-align: left;
-  margin-right: 340px;
 }
 
-/* Slider-1 */
-.swiper {
-  width: 1296px;
+/* Sliders */
+.swiper1 {
+  width: 1000px;
   height: 640px;
   gap: 16px;
   border-radius: 12px 0 0 0;
 }
 
-.swiper-slide {
+.swiper1 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-video {
+  width: 1000px;
+  height: 640px;
+  gap: 16px;
+  border-radius: 12px 0 0 0;
+}
+
+.swiper-video .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -109,21 +124,24 @@ header {
 }
 .clinic-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .clinic-about {
-  width: 746px; /* Фиксированная ширина блока слева */
-  height: 420px; /* Фиксированная высота блока слева */
-  opacity: 1; /* Убедитесь, что блок видим */
+  width: 65%;
+  height: 420px;
+  opacity: 1;
 }
 
 .clinic-text {
-  width: 100%; /* Занимает всю ширину блока слева */
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 12px; /* Отступ между элементами в блоке текста */
+  gap: 12px;
 }
 
 .clinic-text p {
@@ -140,8 +158,8 @@ header {
 
 .clinic-buttons {
   display: flex;
-  gap: 12px; /* Расстояние между кнопками */
-  margin-top: 20px; /* Размещаем кнопки внизу блока */
+  gap: 12px;
+  margin-top: 20px;
 }
 
 .clinic-buttons button {
@@ -180,7 +198,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 80px;
 }
 
 .clinic-icons .icon {
@@ -200,6 +218,7 @@ header {
 }
 
 h1 {
+  text-align: center;
   font-size: 24px;
   margin-bottom: 20px;
 }
@@ -212,8 +231,7 @@ h1 {
 
 .card {
   position: relative;
-  width: 306px;
-  height: 220px;
+  height: 280px;
   margin: 10px;
   overflow: hidden;
   border-radius: 12px;
@@ -234,7 +252,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, #4598D4, #4598D4), linear-gradient(0deg, rgba(1, 138, 190, 0.5), rgba(1, 138, 190, 0.5));
+  background: linear-gradient(0deg, #4598D4, rgba(1, 138, 190, 0.5019607843)), linear-gradient(0deg, rgba(1, 138, 190, 0.5019607843), rgba(1, 138, 190, 0.5019607843));
   opacity: 0.6;
   transition: opacity 0.3s ease;
 }
@@ -253,28 +271,207 @@ h1 {
   transform: scale(1.1);
 }
 
-.card:hover .overlay {
-  opacity: 0.8;
+/* Consiltation block */
+.consultation-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.consultation-text {
+  flex: 1;
+  max-width: 60%;
+}
+
+.consultation-image {
+  flex: 1;
+  max-width: 35%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.consultation-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.consultation h1 {
+  text-align: center;
+  font-family: El Messiri;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50.4px;
+  text-align: center;
+}
+
+.consultation p {
+  font-size: 18px;
+  line-height: 25.2px;
+  margin-bottom: 40px;
+}
+
+.consultation .highlight {
+  font-weight: bold;
+  color: #2a9df4; /* Выберите цвет по вкусу */
+}
+
+.consultation .services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.consultation .service {
+  background: #f0f0f0;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.consultation ul {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25.2px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.consultation li {
+  margin-bottom: 10px;
+}
+
+.therapy-container {
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.therapy-container h2 {
+  font-family: El Messiri;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+  text-align: center;
+}
+
+.therapy-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.therapy-item {
+  flex: 1 1 calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.therapy-item img {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 20px;
+}
+
+.therapy-item p {
+  font-family: El Messiri;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  height: 280px;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 24px, 32px, 24px, 32px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #4598D4, rgba(1, 138, 190, 0.5019607843)), linear-gradient(0deg, rgba(1, 138, 190, 0.5019607843), rgba(1, 138, 190, 0.5019607843));
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.card .title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover img {
+  transform: scale(1.1);
 }
 
 /* Footer */
+* {
+  box-sizing: border-box;
+}
+
 footer {
-  background-color: #4598D4;
   color: #ffffff;
-  padding: 40px 0; /* Increased padding for more space */
   position: relative;
 }
 
 .footer-pattern img {
   width: 100%;
   display: block;
-  margin-bottom: -5px; /* Adjust this value to remove any gap */
+  margin-bottom: -5px;
+}
+
+.container {
+  width: 100%; /* Задайте желаемую максимальную ширину */
+  background-color: #4598D4;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Align items to the top */
+  align-items: flex-start;
   padding: 0 10px;
 }
 

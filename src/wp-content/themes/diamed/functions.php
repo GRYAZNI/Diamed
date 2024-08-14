@@ -14,6 +14,11 @@ function enqueue_custom_scripts() {
     wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
     
     wp_enqueue_script('swiper-init', get_template_directory_uri() . '/assets/js/swiper-init.js', array(), null, true);
+    wp_enqueue_script('emailjs-sdk', 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js', array(), null, true);
+
+    // Подключение вашего JavaScript файла (он будет загружен после библиотеки EmailJS)
+    wp_enqueue_script('email-js', get_template_directory_uri() . '/assets/js/email.js', array('emailjs-sdk'), null, true);
+
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
 
@@ -22,5 +27,8 @@ function enqueue_custom_styles() {
     wp_enqueue_style('main-styles', get_template_directory_uri() . '/assets/css/style.css');
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_styles');
+
+
+
 
 ?>

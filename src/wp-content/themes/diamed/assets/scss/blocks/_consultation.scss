@@ -1,0 +1,75 @@
+
+.consultation-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.consultation-text {
+    flex: 1;
+    max-width: 60%;
+}
+
+.consultation-image {
+    flex: 1;
+    max-width: 35%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.consultation-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.consultation h1 {
+    text-align: center;
+font-family: El Messiri;
+font-size: 42px;
+font-weight: 700;
+line-height: 50.4px;
+text-align: center;
+
+}
+
+.consultation p {
+    font-size: 18px;
+    line-height: 25.2px;
+    margin-bottom: 40px;
+}
+
+.consultation .highlight {
+    font-weight: bold;
+    color: #2a9df4; /* Выберите цвет по вкусу */
+}
+
+.consultation .services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.consultation .service {
+    background: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.consultation ul {
+//styleName: p;
+font-family: Open Sans;
+font-size: 18px;
+font-weight: 300;
+line-height: 25.2px;
+text-align: left;
+    margin-bottom: 20px;
+}
+
+.consultation li {
+    margin-bottom: 10px;
+}
