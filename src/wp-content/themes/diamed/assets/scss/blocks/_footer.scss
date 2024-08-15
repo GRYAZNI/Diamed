@@ -1,15 +1,18 @@
-* {
-    box-sizing: border-box;
-}
+
 footer {
+    box-sizing: border-box;
+
     color: #ffffff;
     position: relative;
 }
-
+.footer-pattern{
+    position: relative;
+    z-index: -10;
+}
 .footer-pattern img {
     width: 100%;
     display: block;
-    margin-bottom: -15px; 
+    margin-bottom: -1px; 
 }
 .container-footer {
     width: 100%; /* Задайте желаемую максимальную ширину */

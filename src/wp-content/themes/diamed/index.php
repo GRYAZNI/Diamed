@@ -190,18 +190,25 @@
     <div class="map">
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A139e072944c26fe7ea936793fa5e1f16449f232df81f09b7134cc73a52dfc907&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
     </div>
-    <div class="contact-info">
-        <h2>Контакты</h2>
-        <ul>
-            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/phone-map.svg" alt="Phone" width="24">8 (061) 041-08-43</li>
-            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/geo-map.svg" alt="Address" width="24">450096 РФ, г. Уфа, ул. Я. Зорге, д. 24</li>
-            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/mail-map.svg" alt="Email" width="24">diabet@t9n@gmail.com</li>
-            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/calendar-map.svg" alt="Working Hours" width="24">
-                <div>
-                    Пн-Сб: 9:00 - 21:00<br>Вс: 9:00 - 16:00
-                </div>
-            </li>
-        </ul>
+    <div class="contact-menu">
+        <div class="contact-info">
+            <h2>Контакты</h2>
+            <ul>
+                <li><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/phone-map.svg" alt="Phone" width="24">8 (961) 041-03-03</li>
+                <li><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/geo-map.svg" alt="Address" width="24">450059 РБ, г. Уфа, ул. Р. Зорге, д. 24</li>
+                <li><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/mail-map.svg" alt="Email" width="24">diabetgn@gmail.com</li>
+            </ul>
+        </div>
+        <div class="contact-time">
+            <div class="contact-time-header">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/calendar-map.svg" alt="calendar" >
+                <div class="contact-time-title">Время работы</div>
+            </div>
+            <ul>
+                <li> Пн-Сб: 9:00 - 21:00</li>
+                <li> Вс: 9:00 - 16:00</li>
+            </ul>
+        </div>
         <button>Записаться в клинику</button>
     </div>
 </div>
