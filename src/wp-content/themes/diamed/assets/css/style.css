@@ -345,6 +345,7 @@ h1 {
   margin-bottom: 10px;
 }
 
+/* Therapy */
 .therapy-container {
   margin: 20px auto;
   padding: 20px;
@@ -388,6 +389,7 @@ h1 {
   text-align: center;
 }
 
+/* services */
 .container {
   text-align: center;
   padding: 20px;
@@ -447,6 +449,132 @@ h1 {
   transform: scale(1.1);
 }
 
+/* ContactForm */
+.appointment-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 350px; /* Отступы по бокам */
+}
+
+.image-container {
+  flex: 1;
+}
+
+.image-container img {
+  width: 636px;
+  height: 354px;
+  border-radius: 12px;
+}
+
+.form-container {
+  flex: 1;
+  padding: 20px;
+  max-width: 455px; /* Максимальная ширина формы */
+}
+
+.form-container h2 {
+  font-family: El Messiri;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+  text-align: left;
+}
+
+.form-container input[type=text], .form-container input[type=tel] {
+  width: 100%;
+  height: 40px; /* Высота 40px */
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc; /* Добавляем границу */
+}
+
+.form-container .button-group {
+  display: flex;
+  gap: 10px; /* Отступ между кнопками */
+}
+
+.form-container button {
+  width: 172px;
+  height: 40px; /* Высота 40px */
+  padding: 12px 48px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form-container .whatsapp-button {
+  width: 271px;
+  height: 40px; /* Высота 40px */
+  padding: 10px;
+  background-color: #24D366;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Contact+map */
+.custom-contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.map {
+  width: 60%;
+  height: 435px;
+}
+
+.contact-info {
+  width: 35%;
+  background-color: #4eaff7;
+  padding: 20px;
+  color: white;
+  border-radius: 8px;
+}
+
+.contact-info h2 {
+  margin-top: 0;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info img {
+  margin-right: 10px;
+}
+
+.contact-info button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: white;
+  color: #4eaff7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-info button:hover {
+  background-color: #0073e6;
+  color: white;
+}
+
 /* Footer */
 * {
   box-sizing: border-box;
@@ -460,10 +588,10 @@ footer {
 .footer-pattern img {
   width: 100%;
   display: block;
-  margin-bottom: -5px;
+  margin-bottom: -15px;
 }
 
-.container {
+.container-footer {
   width: 100%; /* Задайте желаемую максимальную ширину */
   background-color: #4598D4;
 }

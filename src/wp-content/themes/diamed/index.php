@@ -169,17 +169,42 @@
     </div>
 
     <div class="appointment-section">
-        <div class="image-container">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/call.jpg" alt="Doctor Image">
-        </div>
-        <div class="form-container">
-            <form id="contact-form">
-                <input type="text" name="user_name" placeholder="Имя" required>
-                <input type="tel" name="user_phone" placeholder="Номер телефона" required>
-                <button type="submit">Записаться</button>
-            </form>
-        </div>
+    <div class="image-container">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/call.jpg" alt="Doctor Image">
     </div>
+    <div class="form-container">
+        <h2>Запись на приём в клинику эндокринологии, суставов и позвоночника DiaMed </h2>
+        <form id="contact-form">
+            <input type="tel" name="user_phone" placeholder="Номер телефона" required>
+            <input type="text" name="user_name" placeholder="Имя" required>
+            <div class="button-group">
+                <button type="submit">Записаться</button>
+                <a class="whatsapp-button">Записаться в WhatsApp</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="custom-contact-container">
+    <div class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A139e072944c26fe7ea936793fa5e1f16449f232df81f09b7134cc73a52dfc907&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+    <div class="contact-info">
+        <h2>Контакты</h2>
+        <ul>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/phone-map.svg" alt="Phone" width="24">8 (061) 041-08-43</li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/geo-map.svg" alt="Address" width="24">450096 РФ, г. Уфа, ул. Я. Зорге, д. 24</li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/mail-map.svg" alt="Email" width="24">diabet@t9n@gmail.com</li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/calendar-map.svg" alt="Working Hours" width="24">
+                <div>
+                    Пн-Сб: 9:00 - 21:00<br>Вс: 9:00 - 16:00
+                </div>
+            </li>
+        </ul>
+        <button>Записаться в клинику</button>
+    </div>
+</div>
 
 
 
