@@ -89,27 +89,33 @@
         margin-top: 20px; 
     }
     
-    &-buttons button {
-        background-color: #4598D4;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        margin-right: 10px;
-        cursor: pointer;
-        border-radius: 5px;
-        font-size: 14px;
-    }
+  
 }
 
+html {
+    scroll-behavior: smooth;
+}
+.scroll-button {
+    text-decoration: none; 
+    display: inline-block;
+    background-color: #4598D4;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
 
-
-.button-about button {
+.button-about  {
+    text-decoration: none; 
+    display: inline-block;
     background-color: #fff;
     color: #4598D4;
-    width: 169px;
-    height: 40px;
-    padding: 12px 48px;
-    gap: 10px;
+    width: 150px;
+    text-align: center;
+    padding: 15px 20px;
     border-radius: 3px;
     border: 1px solid #4598D4;
     opacity: 1;

@@ -35,10 +35,9 @@
                     </ul>
                 </div>
                 <div class="clinic-buttons">
-                    <button>Записаться в клинику</button>
-                    <div class="button-about">
-                        <button>Подробнее</button>
-                    </div>
+                <a href="#appointment-section" class="scroll-button">Записаться в клинику</a>
+                <a href="#consultation" class="button-about">Подробнее</a>
+
                 </div>
             </div>
             <div class="clinic-image">
@@ -69,7 +68,7 @@
         </div>
     </section>
 
-    <div class="services-block">
+    <div  class="services-block">
         <h1>Клиника эндокринологии, суставов и позвоночника в Уфе</h1>
         <div class="grid">
             <?php
@@ -102,7 +101,7 @@
   <div class="swiper-button-prev"></div>
 </div>
 
-<div class="consultation">
+<div id="consultation" class="consultation">
     <h1>Клиника эндокринологии, суставов и позвоночника</h1>
     <div class="consultation-content">
         <div class="consultation-text">
@@ -168,7 +167,7 @@
             </div>
     </div>
 
-    <div class="appointment-section">
+    <div id="appointment-section" class="appointment-section">
     <div class="image-container">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/call.jpg" alt="Doctor Image">
     </div>

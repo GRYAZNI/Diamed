@@ -15,7 +15,6 @@ gap: 50px;
     width: 30%;
     background-color: #4eaff7;
     border-radius: 8px;
-    height: 435px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -57,11 +56,17 @@ gap: 50px;
 }
 
 .contact-menu button {
-    width: 242px;
     height: 40px;
     padding: 12px 48px;
     gap: 10px;
-    border-radius: 3px 0px 0px 0px;
+//styleName: button;
+font-family: Open Sans;
+font-size: 13px;
+font-weight: 600;
+line-height: 15.6px;
+text-align: left;
+
+    border-radius: 3px;
     background-color: white;
     color: #252525;
     border: none;
