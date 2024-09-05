@@ -11,18 +11,65 @@
     ?>
 <div class="swiper swiper1">
   <div class="swiper-wrapper">
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
+  <div class="swiper-slide">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Slider1/slide-1.jpg" alt="slide1">
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+        <h5>Магнитно-резонансная терапия</h5>
+        <h1>Лечение суставов и позвоночника</h1>
+        <a href="#" class="btn">Записаться на сеанс</a>
+      </div>
+</div>
+  <div class="swiper-slide">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Slider1/slide-2.jpg" alt="slide2">
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+        <h5>Гирудотерапия</h5>
+        <h1>Пиявка, постановка, перевязочный материал</h1>
+        <h4>от 300 рублей за одну пиявку</h4>
+        <a href="#" class="btn">Записаться на сеанс</a>
+      </div>
+</div>  
+  <div class="swiper-slide">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Slider1/slide-3.jpg" alt="slide3">
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+        <h5>Магнитно-резонансная терапия</h5>
+        <h1>УВТ пяточной шпоры</h1>
+        <h4>5 сеансов 5 000 рублей 6 000 рублей
+        10 сеансов 10 000 рублей 12 000 рублей</h4>
+        <a href="#" class="btn">Записаться на сеанс</a>
+      </div>
+</div>
+  <div class="swiper-slide">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Slider1/slide-4.jpg" alt="slide4">
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+        <h5>Гирудотерапия</h5>
+        <h1>Обучение гирудотерапии</h1>
+        <h4>Очно, заочно и онлайн. Быстро и недорого
+        курсы от 6 000 рублей</h4>
+
+        <a href="#" class="btn">Записаться на сеанс</a>
+      </div>
+</div>
+<div class="swiper-slide">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Slider1/slide-5.jpg" alt="slide5">
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+        <h5>Эндокринолог</h5>
+        <h1>Консультация Эндокринолога</h1>
+        <h4>Кандидат медицинских наук
+        2 000 рублей 3 500 рублей</h4>
+
+        <a href="#" class="btn">Записаться на сеанс</a>
+      </div>
+</div>
   </div>
   <div class="swiper-pagination"></div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
 </div>
     <section class="clinic-section">
-        <div class="clinic-block">
-            <h2>В нашей клинике</h2>
-        </div>
+            <h3>В нашей клинике</h3>
         <div class="clinic-content">
             <div class="clinic-about">
                 <div class="clinic-text">
@@ -69,7 +116,7 @@
     </section>
 
     <div  class="services-block">
-        <h1>Клиника эндокринологии, суставов и позвоночника в Уфе</h1>
+        <h3>Клиника эндокринологии, суставов и позвоночника в Уфе</h3>
         <div class="grid">
             <?php
             $images = [
@@ -102,7 +149,7 @@
 </div>
 
 <div id="consultation" class="consultation">
-    <h1>Клиника эндокринологии, суставов и позвоночника</h1>
+    <h3>Клиника эндокринологии, суставов и позвоночника</h3>
     <div class="consultation-content">
         <div class="consultation-text">
         <p>Диабет, ожирение, патология щитовидной железы, надпочечников, половых желез и другие эндокринные заболевания. У нас хватит времени и желания качественно объяснить каждому: <span class="highlight">как нужно питаться, как правильно измерять сахар крови и как принимать лекарства.</span> Для желающих открыта платная школа диабета на базе нашего эндокринологического центра.</p>

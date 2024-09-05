@@ -1,4 +1,37 @@
 @charset "UTF-8";
+/* Globals */
+h1 {
+  font-family: El Messiri;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 76.8px;
+  text-align: center;
+}
+
+h3 {
+  font-family: El Messiri;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50.4px;
+  text-align: center;
+}
+
+h4 {
+  font-family: El Messiri;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+  text-align: center;
+}
+
+h5 {
+  font-family: El Messiri;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  text-align: center;
+}
+
 /* Blocks */
 /* Header */
 /* Основные стили */
@@ -172,19 +205,64 @@ header {
 }
 /* Sliders */
 .swiper1 {
-  width: 1000px;
+  margin-top: 100px;
+  width: 100%;
   height: 640px;
-  gap: 16px;
-  border-radius: 12px 0 0 0;
 }
 
 .swiper1 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
   display: flex;
   justify-content: center;
-  align-items: center;
+  border-radius: 12px;
+}
+
+.swiper1 .swiper-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 80%;
+  transform: translateX(-50%);
+}
+
+.swiper1 .swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+.swiper1 .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.swiper1 .swiper-slide .slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #4598D4, rgba(1, 138, 190, 0.5019607843)), linear-gradient(0deg, rgba(1, 138, 190, 0.5019607843), rgba(69, 152, 212, 0.5019607843));
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
+}
+
+.swiper1 .swiper-slide .slide-content {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.swiper .slide-content .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .swiper-video {
@@ -204,15 +282,6 @@ header {
 }
 
 /* About */
-.clinic-block h2 {
-  font-family: "El Messiri", sans-serif;
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 50px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
 .clinic-section {
   padding: 50px 0;
   background-color: #fff;
@@ -312,12 +381,6 @@ html {
   padding: 20px;
 }
 
-h1 {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -394,15 +457,6 @@ h1 {
 .consultation-image img {
   max-width: 100%;
   height: auto;
-}
-
-.consultation h1 {
-  text-align: center;
-  font-family: El Messiri;
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 50.4px;
-  text-align: center;
 }
 
 .consultation p {
@@ -490,18 +544,15 @@ h1 {
 /* ContactForm */
 .appointment-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 0px 350px 50px; /* Отступы по бокам */
-}
-
-.image-container {
-  flex: 1;
+  gap: 24px;
+  margin-bottom: 100px;
 }
 
 .image-container img {
-  width: 636px;
-  height: 354px;
+  width: 808px;
+  height: 450px;
   border-radius: 12px;
 }
 
@@ -509,6 +560,7 @@ h1 {
   flex: 1;
   padding: 20px;
   max-width: 455px; /* Максимальная ширина формы */
+  gap: 20px;
 }
 
 .form-container h2 {
@@ -531,6 +583,7 @@ h1 {
 .form-container .button-group {
   display: flex;
   gap: 10px; /* Отступ между кнопками */
+  padding-top: 20px;
 }
 
 .form-container button {
@@ -619,7 +672,7 @@ h1 {
 
 .contact-menu button {
   height: 40px;
-  padding: 12px 48px;
+  padding: 0px 48px;
   gap: 10px;
   font-family: Open Sans;
   font-size: 13px;

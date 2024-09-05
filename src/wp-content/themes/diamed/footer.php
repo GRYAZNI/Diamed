@@ -59,13 +59,16 @@
 <?php wp_footer(); ?>
 <script>
 const swiper1 = new Swiper('.swiper1', {
+ slidesPerView: 1.5,
   speed: 400,
-  spaceBetween: 100, 
+  spaceBetween: 24, 
+  centeredSlides: true,
   loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  pagination: {
+  el: '.swiper-pagination',  
+  clickable: true,           
+},
+
 
 });
 </script>

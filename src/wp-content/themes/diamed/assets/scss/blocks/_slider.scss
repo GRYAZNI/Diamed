@@ -1,16 +1,61 @@
 .swiper1 {
-  width: 1000px;
+  margin-top: 100px;
+  width: 100%;
   height: 640px;
-  gap: 16px;
-  border-radius: 12px 0 0 0;
 }
 .swiper1 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+  
   display: flex;
   justify-content: center;
-  align-items: center;
+  border-radius: 12px;
+}
+.swiper1 .swiper-pagination {
+  position: absolute;
+  bottom: 20px; 
+  left: 80%;    
+  transform: translateX(-50%); 
+
+}
+.swiper1 .swiper-pagination-bullet {
+  background-color: #fff; 
+}
+.swiper1 .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 12px;
+
+}
+.swiper1 .swiper-slide .slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #4598D4, #018ABE80),
+              linear-gradient(0deg, #018ABE80, #4598D480);
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
+
+}
+.swiper1 .swiper-slide .slide-content{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2; 
+  
+}
+.swiper .slide-content .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .swiper-video {

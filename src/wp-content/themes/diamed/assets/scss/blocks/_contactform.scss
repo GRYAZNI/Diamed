@@ -1,17 +1,16 @@
 .appointment-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0px 350px 50px; /* Отступы по бокам */
+    gap: 24px;
+    margin-bottom: 100px;
 }
 
-.image-container {
-    flex: 1;
-}
+
 
 .image-container img {
-    width: 636px;
-    height: 354px;
+    width: 808px;
+    height: 450px;
     border-radius: 12px;
 }
 
@@ -19,6 +18,7 @@
     flex: 1;
     padding: 20px;
     max-width: 455px; /* Максимальная ширина формы */
+    gap: 20px;
 }
 
 .form-container h2 {
@@ -41,6 +41,7 @@
 .form-container .button-group {
     display: flex;
     gap: 10px; /* Отступ между кнопками */
+    padding-top: 20px;
 }
 
 .form-container button {
