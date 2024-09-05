@@ -7,7 +7,7 @@
 </head>
 <body <?php body_class(); ?>>
 <header>
-    <div class="container">
+    <div class="header-container">
         <div class="logo">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/logo-header.svg" alt="Логотип">
         </div>
