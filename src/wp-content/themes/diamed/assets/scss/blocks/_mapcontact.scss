@@ -13,6 +13,8 @@ gap: 50px;
 
 .contact-menu {
     width: 30%;
+    height: 435px;
+
     background-color: #4eaff7;
     border-radius: 8px;
     padding: 20px;
@@ -48,6 +50,9 @@ gap: 50px;
 
 .contact-info img, .contact-time-header img {
     margin-right: 10px;
+}
+.contact-time{
+    padding-left: 20px;
 }
 
 .contact-time-header {

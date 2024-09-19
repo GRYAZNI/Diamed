@@ -32,6 +32,14 @@ h5 {
   text-align: center;
 }
 
+h6 {
+  font-family: El Messiri;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+
 /* Blocks */
 /* Header */
 /* Основные стили */
@@ -546,7 +554,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 150px;
   margin-bottom: 100px;
 }
 
@@ -628,6 +636,7 @@ html {
 
 .contact-menu {
   width: 30%;
+  height: 435px;
   background-color: #4eaff7;
   border-radius: 8px;
   padding: 20px;
@@ -663,6 +672,10 @@ html {
 
 .contact-info img, .contact-time-header img {
   margin-right: 10px;
+}
+
+.contact-time {
+  padding-left: 20px;
 }
 
 .contact-time-header {
@@ -716,6 +729,10 @@ footer {
   background-color: #4598D4;
 }
 
+.footer-section h6 {
+  margin-bottom: 10px;
+}
+
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -725,7 +742,6 @@ footer {
 
 .footer-section {
   flex: 1;
-  padding: 0 100px 0 30px;
 }
 
 .footer-logo img {
@@ -734,17 +750,17 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer-section h3 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-
 .footer-section ul {
   list-style: none;
   padding: 0;
 }
 
 .footer-section ul li {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
   margin-bottom: 5px;
 }
 
@@ -755,4 +771,19 @@ footer {
 
 .footer-bottom p {
   margin: 5px 0;
+}
+
+.footer-section p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+}
+
+.footer-section p img {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  vertical-align: middle; /* Выравнивание изображения по середине строки текста */
 }

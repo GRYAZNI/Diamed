@@ -20,6 +20,9 @@ footer {
         background-color: #4598D4;
 
 }
+.footer-section h6 {
+    margin-bottom: 10px; 
+}
 .footer-content {
     display: flex;
     justify-content: space-between;
@@ -29,19 +32,15 @@ footer {
 
 .footer-section {
     flex: 1;
-    padding: 0 100px 0 30px;    
 }
 
 .footer-logo img {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
+
 }
 
-.footer-section h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
 
 .footer-section ul {
     list-style: none;
@@ -49,6 +48,13 @@ footer {
 }
 
 .footer-section ul li {
+    //styleName: small;
+font-family: Open Sans;
+font-size: 14px;
+font-weight: 400;
+line-height: 16.8px;
+text-align: left;
+
     margin-bottom: 5px;
 }
 
@@ -59,4 +65,19 @@ footer {
 
 .footer-bottom p {
     margin: 5px 0;
+}
+.footer-section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+}
+
+.footer-section p img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px; 
+    vertical-align: middle; /* Выравнивание изображения по середине строки текста */
+
 }
